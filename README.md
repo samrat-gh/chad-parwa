@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## About Chad Parwa (चाड पर्व)
 
-## Getting Started
+Chad Parwa reflects to the upcoming Nepali festival (Festival Celebrated in Nepal)
 
-First, run the development server:
+## Contributing
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+We welcome contributions to this project! Please follow these guidelines:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Fork the repository** and create your branch from `main`.
+2. **Describe your changes** clearly in your pull request.
+3. **Write clear, concise commit messages**.
+4. **Ensure your code follows the existing style** (run `pnpm run lint` before submitting).
+5. **Check your code builds and runs locally** before submitting.
+6. **Sign your commits** if required by the project.
+7. **Be respectful and collaborative** in all communications.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for helping improve this project!
