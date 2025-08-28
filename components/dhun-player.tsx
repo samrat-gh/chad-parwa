@@ -21,13 +21,17 @@ interface Track {
 }
 
 const tracks: Track[] = [
-  { id: "1", title: "Mangal Dhoon", src: "/music/Mangal Dhoon.mp3" },
+  { id: "1", title: "Mangal Dhoon", src: "/music/mangal_dhun.mp3" },
   {
     id: "2",
     title: "Dashain Tihar Sugam Pokharel",
-    src: "/music/dashain-tihar-sugam-pokharel.mp3",
+    src: "/music/dashain_tihar_sugam_pokharel.mp3",
   },
-  { id: "3", title: "Malashree Dhoon", src: "/music/Malashree Dhoon.mp3" },
+  {
+    id: "3",
+    title: "Malashree Dhoon",
+    src: "/music/dashain_malashree_dhun.mp3",
+  },
 ];
 
 export default function DhunPlayer() {
