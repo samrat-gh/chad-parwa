@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import Image from "next/image";
 
@@ -7,7 +8,7 @@ export default function Home() {
       <HeroSection />
 
       {/* About Dashain Section */}
-      <section className="py-20 px-4 bg-white overflow-x-hidden">
+      <section className="py-20 px-4 bg-white overflow-x-hidden h-screen">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-red-800 mb-16">
             About Dashain
@@ -308,18 +309,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-red-800 text-white py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4">शुभ दशैं!</h3>
-          <p className="text-red-200 mb-6">
-            May this Dashain bring happiness, prosperity, and blessings to all
-          </p>
-          <div className="text-3xl mb-4">🙏</div>
-          <p className="text-red-300 text-sm">
-            Reflecting on Nepali Culture and Traditions
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
