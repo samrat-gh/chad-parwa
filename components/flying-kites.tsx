@@ -3,27 +3,27 @@ import ChainSwing from "./chain-swing";
 export default function FlyingKites() {
   return (
     <>
-      <div className="absolute inset-0 bottom-10 md:bottom-0 pointer-events-none">
+      <div className="pointer-events-none absolute inset-0 bottom-10 md:bottom-0">
         {/* Left Child with Kite */}
-        <div className="absolute bottom-6 z-5 animate-walk-left">
+        <div className="animate-walk-left absolute bottom-6 z-5">
           {/* Child Figure - Much Smaller */}
           <div className="relative">
-            <div className="w-4 h-4 bg-orange-400 rounded-full mb-1"></div>
-            <div className="w-3 h-6 bg-blue-500 rounded-sm mx-auto"></div>
+            <div className="mb-1 h-4 w-4 rounded-full bg-orange-400"></div>
+            <div className="mx-auto h-6 w-3 rounded-sm bg-blue-500"></div>
             <div className="flex justify-center">
-              <div className="w-1 h-3 bg-yellow-600 rounded-full mx-0.5"></div>
-              <div className="w-1 h-3 bg-yellow-600 rounded-full mx-0.5"></div>
+              <div className="mx-0.5 h-3 w-1 rounded-full bg-yellow-600"></div>
+              <div className="mx-0.5 h-3 w-1 rounded-full bg-yellow-600"></div>
             </div>
 
             {/* Kite Handle/Controller in child's hand */}
-            <div className="absolute top-4 -left-1 animate-handle-left">
-              <div className="w-2 h-1 bg-brown-600 rounded-sm"></div>
-              <div className="w-2 h-0.5 bg-gray-300 rounded-full mt-0.5"></div>
+            <div className="animate-handle-left absolute top-4 -left-1">
+              <div className="bg-brown-600 h-1 w-2 rounded-sm"></div>
+              <div className="mt-0.5 h-0.5 w-2 rounded-full bg-gray-300"></div>
             </div>
           </div>
 
           {/* Complete Kite System - String + Kite + Tail as one unit */}
-          <div className="absolute bottom-4 left-2 animate-kite-system-left">
+          <div className="animate-kite-system-left absolute bottom-4 left-2">
             {/* Smooth Curved String */}
             <svg width="80" height="320" className="absolute bottom-0 left-0">
               <path
@@ -42,7 +42,8 @@ export default function FlyingKites() {
                 width="28"
                 height="28"
                 viewBox="0 0 40 40"
-                className="drop-shadow-lg">
+                className="drop-shadow-lg"
+              >
                 <polygon
                   points="20,2 35,20 20,35 5,20"
                   fill="red"
@@ -55,43 +56,45 @@ export default function FlyingKites() {
               </svg>
 
               {/* Kite Tail attached to kite */}
-              <div className="absolute top-7 left-3 animate-tail-wave">
-                <div className="w-1 h-4 bg-red-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-blue-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-green-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-yellow-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-orange-400 rounded-full"></div>
+              <div className="animate-tail-wave absolute top-7 left-3">
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-red-400"></div>
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-blue-400"></div>
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-green-400"></div>
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-yellow-400"></div>
+                <div className="h-4 w-1 rounded-full bg-orange-400"></div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Right Child with Kite */}
-        <div className="absolute bottom-6 z-5 animate-walk-right">
+        <div className="animate-walk-right absolute bottom-6 z-5">
           {/* Child Figure - Much Smaller */}
           <div className="relative">
-            <div className="w-4 h-4 bg-pink-400 rounded-full mb-1"></div>
-            <div className="w-3 h-6 bg-purple-500 rounded-sm mx-auto"></div>
+            <div className="mb-1 h-4 w-4 rounded-full bg-pink-400"></div>
+            <div className="mx-auto h-6 w-3 rounded-sm bg-purple-500"></div>
             <div className="flex justify-center">
               <div
-                className="w-1 h-3 rounded-full mx-0.5"
-                style={{ backgroundColor: "#8B4513" }}></div>
+                className="mx-0.5 h-3 w-1 rounded-full"
+                style={{ backgroundColor: "#8B4513" }}
+              ></div>
               <div
-                className="w-1 h-3 rounded-full mx-0.5"
-                style={{ backgroundColor: "#8B4513" }}></div>
+                className="mx-0.5 h-3 w-1 rounded-full"
+                style={{ backgroundColor: "#8B4513" }}
+              ></div>
             </div>
 
             {/* Kite Handle/Controller in child's hand */}
-            <div className="absolute top-4 -right-1 animate-handle-right">
-              <div className="w-2 h-1 bg-brown-600 rounded-sm"></div>
-              <div className="w-2 h-0.5 bg-gray-300 rounded-full mt-0.5"></div>
+            <div className="animate-handle-right absolute top-4 -right-1">
+              <div className="bg-brown-600 h-1 w-2 rounded-sm"></div>
+              <div className="mt-0.5 h-0.5 w-2 rounded-full bg-gray-300"></div>
             </div>
           </div>
 
           {/* Complete Kite System - String + Kite + Tail as one unit */}
-          <div className="absolute bottom-4 right-2 animate-kite-system-right">
+          <div className="animate-kite-system-right absolute right-2 bottom-4">
             {/* Smooth Curved String */}
-            <svg width="80" height="320" className="absolute bottom-0 right-0">
+            <svg width="80" height="320" className="absolute right-0 bottom-0">
               <path
                 d="M 78 320 Q 68 280 62 240 Q 58 200 52 160 Q 48 120 42 80 Q 38 40 32 0"
                 stroke="rgba(156, 163, 175, 0.7)"
@@ -105,12 +108,14 @@ export default function FlyingKites() {
             {/* Kite at the end of string */}
             <div
               className="absolute"
-              style={{ bottom: "320px", right: "46px" }}>
+              style={{ bottom: "320px", right: "46px" }}
+            >
               <svg
                 width="28"
                 height="28"
                 viewBox="0 0 40 40"
-                className="drop-shadow-lg">
+                className="drop-shadow-lg"
+              >
                 <polygon
                   points="20,2 35,20 20,35 5,20"
                   fill="purple"
@@ -123,12 +128,12 @@ export default function FlyingKites() {
               </svg>
 
               {/* Kite Tail attached to kite */}
-              <div className="absolute top-7 left-3 animate-tail-wave-reverse">
-                <div className="w-1 h-4 bg-purple-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-pink-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-orange-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-cyan-400 mb-0.5 rounded-full"></div>
-                <div className="w-1 h-4 bg-lime-400 rounded-full"></div>
+              <div className="animate-tail-wave-reverse absolute top-7 left-3">
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-purple-400"></div>
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-pink-400"></div>
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-orange-400"></div>
+                <div className="mb-0.5 h-4 w-1 rounded-full bg-cyan-400"></div>
+                <div className="h-4 w-1 rounded-full bg-lime-400"></div>
               </div>
             </div>
           </div>

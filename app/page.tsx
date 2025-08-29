@@ -4,48 +4,48 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50 overflow-x-clip">
+    <div className="min-h-screen overflow-x-clip bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
       <HeroSection />
 
       {/* About Dashain Section */}
-      <section className="py-20 px-4 bg-white overflow-x-hidden h-screen">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-red-800 mb-16">
+      <section className="h-screen overflow-x-hidden bg-white px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-16 text-center text-4xl font-bold text-red-800 md:text-5xl">
             About Dashain
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid items-center gap-12 md:grid-cols-2">
             <div className="relative">
-              <div className="rounded-2xl shadow-2xl overflow-hidden">
+              <div className="overflow-hidden rounded-2xl shadow-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1604735103013-57046c9a1c8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                   alt="Dashain celebration"
                   width={1000}
                   height={600}
                   sizes="(min-width: 1024px) 600px, (min-width:768px) 50vw, 100vw"
-                  className="w-full h-auto max-w-full object-cover"
+                  className="h-auto w-full max-w-full object-cover"
                   priority
                 />
               </div>
             </div>
             <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg leading-relaxed text-gray-700">
                 Dashain is the longest and most auspicious festival in Nepal,
                 lasting 15 days during the bright lunar fortnight of Ashwin
                 (September-October). It celebrates the victory of Goddess Durga
                 over the demon Mahishasura, symbolizing the triumph of good over
                 evil.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg leading-relaxed text-gray-700">
                 This festival brings families together from across the globe, as
                 people return to their ancestral homes to receive blessings from
                 elders through the sacred ritual of tika and jamara.
               </p>
-              <div className="bg-orange-100 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">
+              <div className="rounded-xl bg-orange-100 p-6">
+                <h3 className="mb-2 text-xl font-semibold text-orange-800">
                   Festival Duration
                 </h3>
                 <p className="text-orange-700">15 Days of Celebration</p>
-                <p className="text-sm text-orange-600 mt-1">
+                <p className="mt-1 text-sm text-orange-600">
                   From Ghatasthapana to Kojagrat Purnima
                 </p>
               </div>
@@ -55,43 +55,43 @@ export default function Home() {
       </section>
 
       {/* Key Days Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-red-50 to-orange-50">
-        <div className="md:max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-red-800 mb-16">
+      <section className="bg-gradient-to-r from-red-50 to-orange-50 px-4 py-20">
+        <div className="mx-auto md:max-w-6xl">
+          <h2 className="mb-16 text-center text-4xl font-bold text-red-800 md:text-5xl">
             Key Days of Dashain
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-8 shadow-lg transition-shadow hover:shadow-xl">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-red-100">
                 <span className="text-2xl">🌱</span>
               </div>
-              <h3 className="text-xl font-bold text-red-800 text-center mb-4">
+              <h3 className="mb-4 text-center text-xl font-bold text-red-800">
                 Ghatasthapana
               </h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-center text-gray-600">
                 The festival begins with planting jamara (barley seeds) in a
                 sacred vessel
               </p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <div className="rounded-2xl bg-white p-8 shadow-lg transition-shadow hover:shadow-xl">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-orange-100">
                 <span className="text-2xl">🙏</span>
               </div>
-              <h3 className="text-xl font-bold text-red-800 text-center mb-4">
+              <h3 className="mb-4 text-center text-xl font-bold text-red-800">
                 Maha Navami
               </h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-center text-gray-600">
                 The ninth day dedicated to intense worship of Goddess Durga
               </p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <div className="rounded-2xl bg-white p-8 shadow-lg transition-shadow hover:shadow-xl">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-100">
                 <span className="text-2xl">🎉</span>
               </div>
-              <h3 className="text-xl font-bold text-red-800 text-center mb-4">
+              <h3 className="mb-4 text-center text-xl font-bold text-red-800">
                 Vijaya Dashami
               </h3>
-              <p className="text-gray-600 text-center">
+              <p className="text-center text-gray-600">
                 The main day when elders give tika and blessings to younger
                 family members
               </p>
@@ -101,20 +101,20 @@ export default function Home() {
       </section>
 
       {/* Traditions & Activities */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-red-800 mb-16">
+      <section className="bg-white px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-16 text-center text-4xl font-bold text-red-800 md:text-5xl">
             Traditions & Activities
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Flying kites"
                   width={800}
                   height={400}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -126,13 +126,13 @@ export default function Home() {
               </div>
             </div>
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Bamboo swings"
                   width={800}
                   height={400}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -144,13 +144,13 @@ export default function Home() {
               </div>
             </div>
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Family feast"
                   width={800}
                   height={400}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -162,13 +162,13 @@ export default function Home() {
               </div>
             </div>
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="New clothes"
                   width={800}
                   height={400}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -180,13 +180,13 @@ export default function Home() {
               </div>
             </div>
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Card games"
                   width={800}
                   height={400}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -196,13 +196,13 @@ export default function Home() {
               </div>
             </div>
             <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-xl transition-shadow">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Temple visits"
                   width={800}
                   height={400}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -216,27 +216,27 @@ export default function Home() {
       </section>
 
       {/* Tika Ceremony Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-orange-50 to-red-50 w-full">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="w-full bg-gradient-to-r from-orange-50 to-red-50 px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-8">
+              <h2 className="mb-8 text-4xl font-bold text-red-800 md:text-5xl">
                 Tika & Jamara
               </h2>
               <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg leading-relaxed text-gray-700">
                   The heart of Dashain lies in the sacred ritual where elders
                   place tika (a mixture of rice, yogurt, and vermillion) on the
                   foreheads of younger family members while offering jamara
                   (sacred barley shoots).
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg leading-relaxed text-gray-700">
                   This ceremony symbolizes the transfer of blessings,
                   protection, and good fortune from the elder generation to the
                   younger ones, strengthening family bonds.
                 </p>
-                <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-semibold text-red-800 mb-3">
+                <div className="rounded-xl bg-white p-6 shadow-lg">
+                  <h3 className="mb-3 text-xl font-semibold text-red-800">
                     Tika Components:
                   </h3>
                   <ul className="space-y-2 text-gray-700">
@@ -262,7 +262,7 @@ export default function Home() {
                 alt="Tika ceremony"
                 width={1000}
                 height={600}
-                className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+                className="h-96 w-full rounded-2xl object-cover shadow-2xl"
               />
             </div>
           </div>
@@ -270,15 +270,15 @@ export default function Home() {
       </section>
 
       {/* Cultural Significance */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-12">
+      <section className="bg-white px-4 py-20">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-12 text-4xl font-bold text-red-800 md:text-5xl">
             Cultural Significance
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid gap-8 md:grid-cols-3">
             <div className="p-6">
-              <div className="text-4xl mb-4">⚔️</div>
-              <h3 className="text-xl font-bold text-red-800 mb-3">
+              <div className="mb-4 text-4xl">⚔️</div>
+              <h3 className="mb-3 text-xl font-bold text-red-800">
                 Victory of Good
               </h3>
               <p className="text-gray-600">
@@ -287,8 +287,8 @@ export default function Home() {
               </p>
             </div>
             <div className="p-6">
-              <div className="text-4xl mb-4">👨‍👩‍👧‍👦</div>
-              <h3 className="text-xl font-bold text-red-800 mb-3">
+              <div className="mb-4 text-4xl">👨‍👩‍👧‍👦</div>
+              <h3 className="mb-3 text-xl font-bold text-red-800">
                 Family Unity
               </h3>
               <p className="text-gray-600">
@@ -297,8 +297,8 @@ export default function Home() {
               </p>
             </div>
             <div className="p-6">
-              <div className="text-4xl mb-4">🔄</div>
-              <h3 className="text-xl font-bold text-red-800 mb-3">Renewal</h3>
+              <div className="mb-4 text-4xl">🔄</div>
+              <h3 className="mb-3 text-xl font-bold text-red-800">Renewal</h3>
               <p className="text-gray-600">
                 Marks a time of spiritual and emotional renewal, fresh
                 beginnings, and hope for prosperity.

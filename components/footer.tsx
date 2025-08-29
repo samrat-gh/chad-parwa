@@ -3,25 +3,26 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-red-800 text-white py-12 px-4 pb-20">
-      <div className="max-w-4xl mx-auto text-center">
-        <h3 className="text-2xl font-bold mb-4">शुभ दशैं!</h3>
-        <p className="text-red-200 mb-6">
+    <footer className="bg-red-800 px-4 py-12 pb-20 text-white">
+      <div className="mx-auto max-w-4xl text-center">
+        <h3 className="mb-4 text-2xl font-bold">शुभ दशैं!</h3>
+        <p className="mb-6 text-red-200">
           May this Dashain bring happiness, prosperity, and blessings to all
         </p>
-        <div className="text-3xl mb-4">🙏</div>
-        <p className="text-red-300 text-sm">
+        <div className="mb-4 text-3xl">🙏</div>
+        <p className="text-sm text-red-300">
           Reflecting on Nepali Culture and Traditions
         </p>
       </div>
-      <div className="max-w-4xl mx-auto text-center mt-4">
+      <div className="mx-auto mt-4 max-w-4xl text-center">
         <Link
           href="https://github.com/samrat-gh/chad-parwa"
           target="_blank"
-          className="group inline-flex items-center w-fit text-red-300 underline px-2 py-2 rounded-full hover:bg-slate-50/20">
+          className="group inline-flex w-fit items-center rounded-full px-2 py-2 text-red-300 underline hover:bg-slate-50/20"
+        >
           <Github className="inline-block group-hover:text-white" size={20} />
         </Link>
-        <p className="text-red-200 text-sm">Contribute Here </p>
+        <p className="text-sm text-red-200">Contribute Here </p>
       </div>
     </footer>
   );

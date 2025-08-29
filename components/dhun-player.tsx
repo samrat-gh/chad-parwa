@@ -115,9 +115,9 @@ export default function DhunPlayer() {
   const volumePercentage = isMuted ? 0 : volume * 100;
 
   return (
-    <div className="absolute md:fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50">
+    <div className="absolute bottom-2 left-1/2 z-50 -translate-x-1/2 transform md:fixed">
       {showTrackList && (
-        <div className="absolute bottom-full mb-2 left-0 right-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+        <div className="absolute right-0 bottom-full left-0 mb-2 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
           {tracks.map((track, index) => (
             <button
               key={track.id}
@@ -126,46 +126,49 @@ export default function DhunPlayer() {
                 setShowTrackList(false);
               }}
               className={cn(
-                "w-full text-left px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors",
+                "w-full px-3 py-2 text-left text-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-700",
                 index === currentTrackIndex &&
-                  "bg-orange-100 dark:bg-orange-900/30 text-red-900 dark:text-orange-100"
-              )}>
+                  "bg-orange-100 text-red-900 dark:bg-orange-900/30 dark:text-orange-100",
+              )}
+            >
               {track.title}
             </button>
           ))}
         </div>
       )}
 
-      <div className="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-3 py-2 shadow-lg border border-gray-200 dark:border-gray-700 min-w-[320px]">
+      <div className="flex min-w-[320px] items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-lg dark:border-gray-700 dark:bg-gray-800">
         {/* Play/Pause Button */}
         <Button
           onClick={togglePlay}
           size="sm"
-          className="w-8 h-8 rounded-full bg-red-500 hover:bg-red-600 text-white p-0 flex-shrink-0"
-          aria-label={isPlaying ? "Pause" : "Play"}>
+          className="h-8 w-8 flex-shrink-0 rounded-full bg-red-500 p-0 text-white hover:bg-red-600"
+          aria-label={isPlaying ? "Pause" : "Play"}
+        >
           {isPlaying ? (
-            <Pause className="w-4 h-4" />
+            <Pause className="h-4 w-4" />
           ) : (
-            <Play className="w-4 h-4 ml-0.5" />
+            <Play className="ml-0.5 h-4 w-4" />
           )}
         </Button>
 
         {/* Time Display */}
-        <span className="text-sm font-mono text-gray-700 dark:text-gray-300 flex-shrink-0">
+        <span className="flex-shrink-0 font-mono text-sm text-gray-700 dark:text-gray-300">
           {formatTime(currentTime)} / {formatTime(duration)}
         </span>
 
         {/* Progress Bar */}
         <div
-          className="flex-1 h-2 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer relative"
+          className="relative h-2 flex-1 cursor-pointer rounded-full bg-gray-200 dark:bg-gray-600"
           onClick={handleProgressClick}
           role="progressbar"
           aria-valuenow={progressPercentage}
           aria-valuemin={0}
           aria-valuemax={100}
-          aria-label="Audio progress">
+          aria-label="Audio progress"
+        >
           <div
-            className="h-full bg-red-500 rounded-full transition-all duration-150"
+            className="h-full rounded-full bg-red-500 transition-all duration-150"
             style={{ width: `${progressPercentage}%` }}
           />
         </div>
@@ -175,25 +178,27 @@ export default function DhunPlayer() {
           onClick={() => setIsMuted(!isMuted)}
           variant="ghost"
           size="sm"
-          className="w-8 h-8 p-0 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 flex-shrink-0"
-          aria-label={isMuted ? "Unmute" : "Mute"}>
+          className="h-8 w-8 flex-shrink-0 p-0 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+          aria-label={isMuted ? "Unmute" : "Mute"}
+        >
           {isMuted ? (
-            <VolumeX className="w-4 h-4" />
+            <VolumeX className="h-4 w-4" />
           ) : (
-            <Volume2 className="w-4 h-4" />
+            <Volume2 className="h-4 w-4" />
           )}
         </Button>
 
         <div
-          className="w-16 h-2 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer relative flex-shrink-0"
+          className="relative h-2 w-16 flex-shrink-0 cursor-pointer rounded-full bg-gray-200 dark:bg-gray-600"
           onClick={handleVolumeClick}
           role="slider"
           aria-valuenow={volumePercentage}
           aria-valuemin={0}
           aria-valuemax={100}
-          aria-label="Volume control">
+          aria-label="Volume control"
+        >
           <div
-            className="h-full bg-red-500 rounded-full transition-all duration-150"
+            className="h-full rounded-full bg-red-500 transition-all duration-150"
             style={{ width: `${volumePercentage}%` }}
           />
         </div>
@@ -203,12 +208,13 @@ export default function DhunPlayer() {
           onClick={() => setShowTrackList(!showTrackList)}
           variant="ghost"
           size="sm"
-          className="w-8 h-8 p-0 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 flex-shrink-0"
-          aria-label="Select track">
+          className="h-8 w-8 flex-shrink-0 p-0 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+          aria-label="Select track"
+        >
           {showTrackList ? (
-            <ChevronDown className="w-4 h-4" />
+            <ChevronDown className="h-4 w-4" />
           ) : (
-            <ChevronUp className="w-4 h-4" />
+            <ChevronUp className="h-4 w-4" />
           )}
         </Button>
       </div>
