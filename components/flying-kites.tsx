@@ -3,7 +3,7 @@ import ChainSwing from "./chain-swing";
 export default function FlyingKites() {
   return (
     <>
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 bottom-10 md:bottom-0 pointer-events-none">
         {/* Left Child with Kite */}
         <div className="absolute bottom-6 z-5 animate-walk-left">
           {/* Child Figure - Much Smaller */}

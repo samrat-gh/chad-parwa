@@ -2,7 +2,7 @@
 
 import DashainCounter from "./dashain-counter";
 import DhunPlayer from "./dhun-player";
-import Dhun from "./dhun-player";
+
 import FlyingKites from "./flying-kites";
 
 const HeroSection = () => {
@@ -12,7 +12,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1566139149-a05e3fef2db9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+            "url('https://images.pexels.com/photos/26612880/pexels-photo-26612880.jpeg')",
         }}
       />
 

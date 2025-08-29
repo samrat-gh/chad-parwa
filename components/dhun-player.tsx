@@ -115,7 +115,7 @@ export default function DhunPlayer() {
   const volumePercentage = isMuted ? 0 : volume * 100;
 
   return (
-    <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50">
+    <div className="absolute md:fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50">
       {showTrackList && (
         <div className="absolute bottom-full mb-2 left-0 right-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
           {tracks.map((track, index) => (

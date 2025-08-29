@@ -3,25 +3,28 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50 overflow-x-clip">
       <HeroSection />
 
       {/* About Dashain Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white overflow-x-hidden">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-red-800 mb-16">
             About Dashain
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <Image
-                src="https://images.unsplash.com/photo-1604735103013-57046c9a1c8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Dashain celebration"
-                width={1000}
-                height={600}
-                className="rounded-2xl shadow-2xl w-full h-96 object-cover"
-              />
+            <div className="relative">
+              <div className="rounded-2xl shadow-2xl overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1604735103013-57046c9a1c8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Dashain celebration"
+                  width={1000}
+                  height={600}
+                  sizes="(min-width: 1024px) 600px, (min-width:768px) 50vw, 100vw"
+                  className="w-full h-auto max-w-full object-cover"
+                  priority
+                />
+              </div>
             </div>
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -52,7 +55,7 @@ export default function Home() {
 
       {/* Key Days Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-red-50 to-orange-50">
-        <div className="max-w-6xl mx-auto">
+        <div className="md:max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-red-800 mb-16">
             Key Days of Dashain
           </h2>
@@ -212,7 +215,7 @@ export default function Home() {
       </section>
 
       {/* Tika Ceremony Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-orange-50 to-red-50">
+      <section className="py-20 px-4 bg-gradient-to-r from-orange-50 to-red-50 w-full">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
