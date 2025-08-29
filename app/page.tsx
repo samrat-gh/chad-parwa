@@ -17,10 +17,10 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1604735103013-57046c9a1c8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  src="/dashain.jpg"
                   alt="Dashain celebration"
-                  width={1000}
-                  height={600}
+                  width={1200}
+                  height={800}
                   sizes="(min-width: 1024px) 600px, (min-width:768px) 50vw, 100vw"
                   className="h-auto w-full max-w-full object-cover"
                   priority
@@ -110,7 +110,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/children-flying-kite-during-dashain.jpg"
                   alt="Flying kites"
                   width={800}
                   height={400}
@@ -128,7 +128,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/dashain-swings.jpg"
                   alt="Bamboo swings"
                   width={800}
                   height={400}
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/dashain-meals.jpg"
                   alt="Family feast"
                   width={800}
                   height={400}
@@ -164,7 +164,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/dashain-clothes.jpg"
                   alt="New clothes"
                   width={800}
                   height={400}
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/card-games.jpg"
                   alt="Card games"
                   width={800}
                   height={400}
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg transition-shadow group-hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/Maitidevi-temple.jpg"
                   alt="Temple visits"
                   width={800}
                   height={400}
@@ -235,7 +235,7 @@ export default function Home() {
                   protection, and good fortune from the elder generation to the
                   younger ones, strengthening family bonds.
                 </p>
-                <div className="rounded-xl bg-white p-6 shadow-lg">
+                {/* <div className="rounded-xl bg-white p-6 shadow-lg">
                   <h3 className="mb-3 text-xl font-semibold text-red-800">
                     Tika Components:
                   </h3>
@@ -253,12 +253,12 @@ export default function Home() {
                       • <strong>Jamara:</strong> Growth and renewal
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
             <div>
               <Image
-                src="https://images.unsplash.com/photo-1605649487212-47bdab064df8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/tika-and-jamara.jpg"
                 alt="Tika ceremony"
                 width={1000}
                 height={600}
