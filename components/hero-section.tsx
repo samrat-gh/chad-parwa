@@ -1,11 +1,10 @@
 "use client";
 
-import DashainCounter from "./dashain-counter";
 import DhunPlayer from "./dhun-player";
 
 import FlyingKites from "./flying-kites";
 
-const HeroSection = () => {
+const HeroSection = ({ children }: { children: React.ReactNode }) => {
   return (
     <section className="relative flex h-screen items-center justify-center overflow-hidden">
       <div
@@ -29,7 +28,7 @@ const HeroSection = () => {
         <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-700 md:text-xl">
           The Greatest Festival of Nepal - Celebrating Victory of Good over Evil
         </p>
-        <DashainCounter />
+        {children}
       </div>
       <DhunPlayer />
     </section>

@@ -1,3 +1,4 @@
+import DashainCounter from "@/components/dashain-counter";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import Image from "next/image";
@@ -5,7 +6,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-clip bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50">
-      <HeroSection />
+      <HeroSection>
+        <DashainCounter />
+      </HeroSection>
 
       {/* About Dashain Section */}
       <section className="h-screen overflow-x-hidden bg-white px-4 py-20">
